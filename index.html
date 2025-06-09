@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCityConnect - Urban Innovation Hub</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div id="app">
+        <nav class="navbar">
+            <div class="logo">MyCityConnect</div>
+            <ul class="nav-links">
+                <li><a href="index.html" :class="{ active: currentPath === 'index.html' }">Home</a></li>
+                <li><a href="pages/local-issues.html" :class="{ active: currentPath === 'local-issues.html' }">Local Issues</a></li>
+                <li><a href="pages/solutions.html" :class="{ active: currentPath === 'solutions.html' }">Solutions</a></li>
+                <li><a href="pages/community-events.html" :class="{ active: currentPath === 'community-events.html' }">Community Events</a></li>
+                <li><a href="pages/feedback.html" :class="{ active: currentPath === 'feedback.html' }">Feedback Forum</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Welcome to MyCityConnect</h1>
+                    <p>Empowering urban communities through technology and innovation</p>
+                </div>
+            </section>
+            
+        <div class="solutions-container"> 
+            <section class="features">
+                <div class="feature-card" @mouseenter="hoverCard" @mouseleave="unhoverCard">
+                    <h2>Smart Traffic Management</h2>
+                    <p>Real-time traffic monitoring and optimization solutions</p>
+                </div>
+                <div class="feature-card" @mouseenter="hoverCard" @mouseleave="unhoverCard">
+                    <h2>Energy Efficiency</h2>
+                    <p>Smart solutions for sustainable energy consumption</p>
+                </div>
+                <div class="feature-card" @mouseenter="hoverCard" @mouseleave="unhoverCard">
+                    <h2>Waste Management</h2>
+                    <p>Innovative approaches to urban waste reduction</p>
+                </div>
+            </section>
+        </div>
+        </main>
+
+        <footer>
+            <p>MyCityConnect</p>
+        </footer> 
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

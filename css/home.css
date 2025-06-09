@@ -1,0 +1,87 @@
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 500px;
+    background-image: url('https://scontent.fcmb1-2.fna.fbcdn.net/v/t1.6435-9/84573338_190930072251315_8303601161169010688_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHWsoRgqr6LI6I32pnjO2MB8s9ZyRxk6fDyz1nJHGTp8NHCdN_f31sV4azGPEXep0ujkSI9ZFeGpTVoGwcJj1Jy&_nc_ohc=qxyvCkIYD1AQ7kNvwG5CC_b&_nc_oc=AdkAlHKtBdUFRIyz4u9aId2gp28-1nJn0dQIxNx-O1G82l7unSMt1Yv6YKmJKXir5ecv_RfoC5y7r5atG118Gcbq&_nc_zt=23&_nc_ht=scontent.fcmb1-2.fna&_nc_gid=Qt0ugifCyeCPVFsFMt3YkQ&oh=00_AfMkHow3lAufakeGJtTGKE779hTdq6_vlLimuLp6C-3-5Q&oe=686D7AC1');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.9;
+    
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Features Section */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: #b3c2dd;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(30, 12, 99, 0.329);
+    transition: transform 0.3s;
+}
+
+.solutions-container {
+    display: flex;
+    align-items:center;
+    
+    background-image: url('https://soracom.io/wp-content/uploads/2022/01/AdobeStock_181088041-scaled.jpeg');
+    background-size: cover;      /* Ensures the image covers the whole container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;/* Prevents tiling */
+    width: 200;
+    height:auto             
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h2 {
+    color: #070707;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+} 

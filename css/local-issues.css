@@ -1,0 +1,41 @@
+.issues-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.issue-card {
+    background: #b3c2dd;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.issue-card h2 {
+    color: #011223;
+    margin-bottom: 1rem;
+}
+
+.issue-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.stat-item {
+    background: #edf3f9;
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.stat-item h3 {
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+    color: #000000;
+} 

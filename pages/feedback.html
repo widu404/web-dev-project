@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - MyCityConnect</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/feedback.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <nav class="navbar">
+            <div class="logo">MyCityConnect</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="local-issues.html">Local Issues</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="community-events.html">Community Events</a></li>
+                <li><a href="feedback.html" class="active">Feedback</a></li>
+            </ul>
+        </nav>
+
+        <div class="feedback-container">
+            <div>
+                
+            </div>
+            
+            <h1>Community Feedback</h1>
+            <p>Share your thoughts and ideas to help make our city smarter!</p>
+
+            <div class="comment-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" v-model="newComment.name" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" v-model="newComment.message" placeholder="Share your thoughts..."></textarea>
+                </div>
+                <button @click="addComment">Submit Feedback</button>
+            </div>
+
+            <div class="comments-list">
+                <div v-for="comment in comments" :key="comment.id" class="comment">
+                    <div class="comment-header">
+                        <span>{{ comment.name }}</span>
+                        <span>{{ comment.date }}</span>
+                    </div>
+                    <div class="comment-content">
+                        {{ comment.message }}
+                    </div>
+                </div>
+            </div>
+        <div class="center-container">
+            <img class="forum_image" src="https://i.pinimg.com/736x/f7/88/b3/f788b329d73ec96bd1bf8157bf389927.jpg">
+        </div>
+            
+        
+    </div>
+
+    <div>
+        <footer>
+            <p>MyCityConnect</p>
+        </footer>
+    </div>   
+
+    <script src="../js/main.js"></script>
+</body>
+</html> 
